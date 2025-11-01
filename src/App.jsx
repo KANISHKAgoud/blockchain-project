@@ -8,13 +8,21 @@ function App() {
   const [entries, setEntries] = useState([]);
 
   const connectWallet = async () => {
+  try {
     if (window.ethereum) {
-      const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
+      const accounts = await window.ethereum.request({
+        method: "eth_requestAccounts",
+      });
       setAccount(accounts[0]);
+      console.log("Connected account:", accounts[0]);
     } else {
-      alert("Please install MetaMask to use this app.");
+      alert("MetaMask not detected! Please install the MetaMask extension.");
     }
-  };
+  } catch (error) {
+    console.error("Error connecting to MetaMask:", error);
+  }
+};
+
 
   const saveEntry = () => {
     if (!entry.trim()) return alert("Write something before saving!");
