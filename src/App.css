@@ -1,0 +1,133 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  animation: gradientMove 10s ease infinite alternate;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientMove {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.floating-brain {
+  position: absolute;
+  top: 10%;
+  font-size: 4rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: #4a00e0;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.connect-btn, .save-btn {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.connect-btn:hover, .save-btn:hover {
+  transform: scale(1.05);
+}
+
+.input-area {
+  width: 100%;
+  height: 100px;
+  margin: 1rem 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.connected {
+  color: green;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.entries {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.entry-card {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.entry-card span {
+  display: block;
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .floating-brain {
+    top: 5%;
+    font-size: 3rem;
+  }
+} */
